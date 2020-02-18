@@ -17,33 +17,65 @@ div
 .b1
 {
     background-color:red;
+    float:right;
+    position: fixed;
+    width:200px;
+    height:200px;
+    border-radius:25px;
+    margin: 100px;
+    
+    
 }
 
 .b2
 {
     background-color:yellow;
+    animation-name:colorChange;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    
 }
+    @keyframes colorChange{
+        from{background-color: yellow;}
+        to{background-color: fuchsia;}
+    }
 
 .b3
 {
     background-color:blue;
     color:white;
+    float:left;
+    width:200px;
+    height:400px;
+    border-radius: 100px;
 }
 
 .b4
 {
+    
     background-color:orange;
 }
 
 .b5
 {
+    position:relative;
     background-color:purple;
     color:white;
+    animation:square 5s linear 2s infinite alternate;
 }
+    @keyframes square{
+        0%{background-color:purple; left: 0px; top: 0px;}
+        25%{background-color:cornsilk; left: 200px; top: 0px;}
+        50%{background-color:cadetblue; left: 200px; top: 200px;}
+        75%{background-color:darkseagreen; left: 0px; top: 200px;}
+        100%{background-color:purple; left: 0px; top: 0px;}
+    }
 
 .b6
 {
     background-color:darksalmon;
+    border-style:dotted;
+    width: 394px;
 }
 
 
